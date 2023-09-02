@@ -181,12 +181,12 @@ command! -nargs=? -complete=filetype UT call s:StdIOUpdateTemplate('<args>')
 
 if g:std_io_map_default
   nnoremap <silent> <leader>r :IO<cr>
-  nnoremap <silent> <leader>er :IOI<cr>
+  nnoremap <silent> <leader>q :OI<cr>
+  nnoremap <silent> <leader>ra :IOI<cr>
   nnoremap <silent> <leader>tr :IO 1<cr>
   nnoremap <silent> <leader>i :execute 'sbuffer' g:std_io_input_buffer<cr>
   nnoremap <silent> <leader>o :execute 'sbuffer' g:std_io_output_buffer<cr>
   nnoremap <silent> <leader>f :execute 'sbuffer' g:std_io_current_file_buffer<cr>
-  nnoremap <silent> <leader>q :OI<cr>
   nnoremap <silent> <leader>p :GO<cr>
   nnoremap <silent> <leader>n :GO 1<cr>
 endif
